@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:backgroundTint="@color/dark_blue"
+    app:cardCornerRadius="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvItemDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="serif"
+            android:text="May 10/10/2022"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="@dimen/tv_text_small_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvItemCondition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="serif"
+            android:text="Sunny"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="@dimen/tv_text_small_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tvItemDate"
+            app:layout_constraintTop_toBottomOf="@+id/tvItemDate" />
+
+        <ImageView
+            android:id="@+id/imgDailyCondition"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/btn_star" />
+
+        <TextView
+            android:id="@+id/tvTemperature"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="24 C"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="@dimen/tv_text_medium_size"
+            app:layout_constraintBottom_toTopOf="@+id/tvItemCondition"
+            app:layout_constraintEnd_toStartOf="@+id/imgDailyCondition"
+            app:layout_constraintStart_toEndOf="@+id/tvItemDate"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

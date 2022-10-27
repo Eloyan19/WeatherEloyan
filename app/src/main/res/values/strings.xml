@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">WeatherEloyan</string>
+
+    <!-- Default values for card view -->
+    <string name="default_city_name">City</string>
+    <string name="default_temperature">--°C</string>
+    <string name="default_condition">Sunny</string>
+    <string name="default_date">00/00/2022 00:00</string>
+    <string name="default_max_min_temperature">30/15°C</string>
+
+    <!-- Values for tabs -->
+    <string name="day_weather_period">Day</string>
+    <string name="week_weather_period">Week</string>
+
+    <!-- Values for request permission -->
+    <string name="granted_permission">Permission is granted</string>
+    <string name="not_granted_permission">Permission is not granted</string>
+    <string name="location_permission_denied">Location permission denied</string>
+    <string name="ask_location_permission">Location permission denied</string>
+
+    <!-- Alert dialogs -->
+    <string name="enter_name_dialog_title">City name:</string>
+    <string name="positive_btn_text">OK</string>
+    <string name="negative_btn_text">Cancel</string>
+    <string name="gps_dialog_title">GPS disabled</string>
+    <string name="gps_dialog_message">Do you want enable GPS?</string>
+
+    <!-- Api response error -->
+    <string name="response_error_message">Connection failed. Pls try again.</string>
+</resources>
